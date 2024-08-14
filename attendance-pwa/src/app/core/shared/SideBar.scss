@@ -1,0 +1,76 @@
+.sidebar {
+  font-family: "Montserrat", sans-serif;
+  width: 210px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  &-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .sidebar-logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .sidebar-title {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(0, 0, 0);
+    }
+  }
+}
+
+.sidebar-button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(37, 37, 37);
+  margin-bottom: 10px;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #83bc9a;
+  }
+
+  .icon {
+    margin-right: 10px;
+    color: rgb(58, 57, 57);
+  }
+
+  .text {
+    flex-grow: 1;
+    font-size: 13px;
+    color: rgb(58, 57, 57);
+  }
+
+  .text-testing {
+    flex-grow: 1;
+    font-size: 13px;
+  }
+
+  &.active {
+    background-color: #59a16b;
+    color: #ffffff;
+    .icon {
+      color: white;
+    }
+    .text {
+      color: white;
+    }
+  }
+}
